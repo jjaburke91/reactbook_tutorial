@@ -121,7 +121,6 @@ var Excel = React.createClass({
         );
     },
 
-
     _renderTable: function() {
         return (
             React.DOM.table(null,
@@ -183,10 +182,10 @@ var Excel = React.createClass({
     }
  });
 
-var Table = ReactDOM.render(
-    React.createElement( Excel, {
-        header: headers,
-        initialData: data
-    }),
-    document.getElementById("app")
-);
+// var Table = ReactDOM.render(
+//     React.createElement( Excel, {
+//         header: headers,
+//         initialData: data
+//     }),
+//     document.getElementById("app")
+// );

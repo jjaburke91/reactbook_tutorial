@@ -23,21 +23,20 @@ var logMixin = {
 };
 
 
-
 /** Classes **/
 
 var Counter = React.createClass({
-                name: "Counter",
-                mixins: [React.addons.PureRenderMixin],
+    name: "Counter",
+    mixins: [React.addons.PureRenderMixin],
 
-                propTypes: {
-                    count: React.PropTypes.number.isRequired
-                },
+    propTypes: {
+        count: React.PropTypes.number.isRequired
+    },
 
-                render: function() {
-                    console.log(this.name + ':: Rendering');
-                    return React.DOM.span(null,
-                        this.props.count
+    render: function() {
+        console.log(this.name + ':: Rendering');
+        return React.DOM.span(null,
+            this.props.count
         );
     }
 });
